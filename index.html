@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crowdfunding Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">HexFunding</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#create-project">Create Project</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Support Innovative Ideas & Projects</h2>
+            <p>Start or contribute to a crowdfunding campaign today!</p>
+            <a href="#create-project" class="cta-button">Start a Project</a>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2>Featured Projects</h2>
+        <div class="project-cards">
+            <div class="project-card">
+                <img src="images-2.jpeg" alt="Project Image">
+                <h3>Clean Water Access Initiative</h3>
+                <p>Build and install clean water filtration systems in communities that lack access to safe drinking water.</p>
+                <div class="goal">
+                    <p><strong>Goal:</strong> $10,000</p>
+                    <p><strong>Raised:</strong> $5,200</p>
+                </div>
+                <button class="donate-button">Contribute</button>
+            </div>
+
+            <div class="project-card">
+                <img src="environmental-protection-banner-people-running-zero-waste-campaign_540284-692.jpg.avif" alt="Project Image">
+                <h3>Zero-Waste Awareness Campaign</h3>
+                <p>Launch a campaign to educate individuals and businesses on reducing waste and adopting zero-waste practices.</p>
+                <div class="goal">
+                    <p><strong>Goal:</strong> $20,000</p>
+                    <p><strong>Raised:</strong> $15,000</p>
+                </div>
+                <button class="donate-button">Contribute</button>
+            </div>
+
+            <div class="project-card">
+                <img src="mental-health-awareness-concept_23-2148514152.jpg.avif" alt="Project Image">
+                <h3>Mental Health Awareness and Support Program</h3>
+                <p>Create support networks and resources to raise awareness and reduce stigma surrounding mental health issues.</p>
+                <div class="goal">
+                    <p><strong>Goal:</strong> $30,000</p>
+                    <p><strong>Raised:</strong> $10,000</p>
+                </div>
+                <button class="donate-button">Contribute</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="create-project" class="create-project">
+        <h2>Create Your Own Project</h2>
+        <form action="#" method="post" class="project-form">
+            <label for="title">Project Title:</label>
+            <input type="text" id="title" name="title" required>
+
+            <label for="goal">Funding Goal ($):</label>
+            <input type="number" id="goal" name="goal" required>
+
+            <label for="description">Project Description:</label>
+            <textarea id="description" name="description" rows="5" required></textarea>
+
+            <button type="submit" class="submit-button">Create Project</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 HexFunding. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="interaction.js"></script>
+
+</body>
+</html>
